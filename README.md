@@ -91,5 +91,5 @@ Features of the deployed app:
 
 ## 📬 Contact
 For any queries or collaborations, reach out at:  
-**mailme.wivk@gmail.com**
+**cse.kvishwa@gmail.com**
 
