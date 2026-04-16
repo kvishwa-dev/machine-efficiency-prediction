@@ -1,111 +1,155 @@
 # 🤖 Smart Manufacturing Machines Efficiency Prediction
 
-## 📌 Problem Statement
-In modern manufacturing environments, machine inefficiencies result in production losses, energy waste, and increased maintenance costs. There is a need for an intelligent system that can predict machine efficiency levels in real-time using operational sensor data.
+## 📌 Overview
 
----
+This project builds a machine learning system to predict the
+**efficiency status** of manufacturing machines using real-time sensor
+data. It helps reduce downtime, optimize production, and enable
+predictive maintenance.
 
-## 🎯 Objective
-To develop a machine learning-based classification system that predicts the **Efficiency Status** (High, Medium, Low) of manufacturing machines, aiding in predictive maintenance and operational optimization.
+------------------------------------------------------------------------
 
----
+## 🎯 Objectives
 
-## 💡 Proposed System Features
-- Data cleaning, encoding, and scaling
-- Feature selection using Random Forest and ANOVA
-- Multi-model training: Logistic Regression, SVM, Random Forest
-- Evaluation using accuracy, confusion matrix, and ROC curve
-- Web deployment using Streamlit for real-time predictions
-- Models saved using `joblib`
+-   Predict machine efficiency levels: **High, Medium, Low**
+-   Improve operational efficiency
+-   Enable proactive maintenance decisions
 
----
+------------------------------------------------------------------------
 
-## 🛠️ Tools & Technologies Used
-- **Programming Language**: Python
-- **Libraries**: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`, `joblib`
-- **Web App**: Streamlit
+## 🚀 Key Features
 
----
+-   Data preprocessing (cleaning, encoding, scaling)
+-   Feature selection using Random Forest & ANOVA
+-   Multiple ML models:
+    -   Logistic Regression
+    -   Support Vector Machine (SVM)
+    -   Random Forest
+-   Model evaluation:
+    -   Accuracy Score
+    -   Confusion Matrix
+    -   ROC Curve (One-vs-Rest)
+-   Interactive **Streamlit web app**
+-   Model persistence using `joblib`
 
-## 📁 Dataset
-- **Source**: [Kaggle - Intelligent Manufacturing Dataset](https://www.kaggle.com/datasets/ziya07/intelligent-manufacturing-dataset)
-- **Rows**: 100,000+
-- **Target Variable**: `Efficiency_Status`  
-- **Features**: Sensor readings like temperature, vibration, power consumption, error rate, etc.
+------------------------------------------------------------------------
 
----
+## 🛠️ Tech Stack
 
-## ✅ Selected Features
-Features selected using Random Forest importance & ANOVA:
-- `Production_Speed_units_per_hr`
-- `Error_Rate_%`
+-   **Language**: Python
+-   **Libraries**: pandas, numpy, scikit-learn, matplotlib, seaborn,
+    joblib
+-   **Frontend**: Streamlit
 
----
+------------------------------------------------------------------------
 
-## 🔍 Models Trained
-- Logistic Regression
-- Support Vector Machine (SVM)
-- Random Forest Classifier
+## 📊 Dataset
 
----
+-   Source:
+    https://www.kaggle.com/datasets/ziya07/intelligent-manufacturing-dataset
+-   Size: 100,000+ rows
+-   Target: `Efficiency_Status`
 
-## 📊 Evaluation Metrics
-- Accuracy Score
-- Classification Report (Precision, Recall, F1-score)
-- Confusion Matrix (Visualized)
-- ROC Curve (One-vs-Rest)
+### Key Features Used
 
----
+-   Production_Speed_units_per_hr
+-   Error_Rate\_%
 
-## ⚙️ Run on your Local Machine
-# 1️⃣ Clone the repository
-- git clone https://github.com/kvishwa-dev/machine-efficiency-prediction.git
-- cd machine-efficiency-prediction
+------------------------------------------------------------------------
 
-# 2️⃣ Create virtual environment
-- python -m venv venv
+## 🧠 Model Workflow
 
-# Activate it:
-- Windows:
+1.  Data Collection
+2.  Data Cleaning & Preprocessing
+3.  Feature Selection
+4.  Model Training
+5.  Model Evaluation
+6.  Deployment via Streamlit
+
+------------------------------------------------------------------------
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone Repository
+
+``` bash
+git clone https://github.com/kvishwa-dev/machine-efficiency-prediction.git
+cd machine-efficiency-prediction
+```
+
+### 2️⃣ Create Virtual Environment
+
+``` bash
+python -m venv venv
+```
+
+Activate: - Windows:
+
+``` bash
 venv\Scripts\activate
-- Mac/Linux:
+```
+
+-   Mac/Linux:
+
+``` bash
 source venv/bin/activate
+```
 
-# 3️⃣ Install dependencies
-- pip install -r requirements.txt
+### 3️⃣ Install Dependencies
 
-# 4️⃣ Run the app
-- streamlit run app.py
+``` bash
+pip install -r requirements.txt
+```
 
-# 5️⃣ Open in browser
-- http://localhost:8501
+### 4️⃣ Run Application
 
----
+``` bash
+streamlit run app.py
+```
 
-## 💻 Streamlit Web App
-Features of the deployed app:
-- Input form to enter machine metrics
-- Real-time prediction of efficiency class
-- Visualization of Confusion Matrix & ROC Curve
-- Backend models loaded from saved `.pkl` files
+### 5️⃣ Open in Browser
 
----
+http://localhost:8501
 
-## 📷 UI & Output Snapshots
-- Streamlit Input Form  
-- Model Output: Predicted Efficiency Status  
-- Evaluation Charts: Confusion Matrix & ROC Curve
+------------------------------------------------------------------------
 
----
+## 💻 Streamlit App Features
 
-## 🚀 Future Scope
-- Integrate with live sensor data from IoT devices
-- Add time-series forecasting for trend prediction
-- Build predictive maintenance alerts
-- Centralized dashboard for factory-wide monitoring
+-   User input form for machine parameters
+-   Instant efficiency prediction
+-   Confusion matrix visualization
+-   ROC curve visualization
 
----
+------------------------------------------------------------------------
+
+## 📁 Project Structure
+
+    ├── models/
+    ├── app.py
+    ├── notebook.ipynb
+    ├── smart_manufacturing_efficiency_EDA.ipynb
+    ├── manufacturing_6G_dataset.csv
+    ├── requirements.txt
+    └── README.md
+
+------------------------------------------------------------------------
+
+## 📈 Future Improvements
+
+-   Real-time IoT sensor integration
+-   Time-series forecasting
+-   Predictive maintenance alerts
+-   Enterprise dashboard for monitoring
+
+------------------------------------------------------------------------
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork this repo and submit a pull
+request.
+
+------------------------------------------------------------------------
 
 ## 📬 Contact
-For any queries or collaborations, reach out at:  
-**cse.kvishwa@gmail.com**
+
+For queries or collaboration: **Email**: cse.kvishwa@gmail.com
